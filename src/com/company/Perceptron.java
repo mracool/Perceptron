@@ -72,15 +72,18 @@ public class Perceptron {
             System.out.println("y=" + y);
         }
     }
-   /* public void checking_cords(){
-        Scanner sc = new Scanner(System.in);
-        study();
+    public void checking_cords(){
+         Scanner sc = new Scanner(System.in);
 
         x[1] = sc.nextDouble();
         x[0] = sc.nextDouble();
-            cy();
-            System.out.println("y=" + y);
-        }*/
+        if (x[0] >= 1 && x[0] <= 4 && x[1] >= 2 && x[1] <= 5) {
+            System.out.println(" Right coords");
+        }
+        if (x[0] >= -3 && x[0] <= -1 && x[1] >= -3 && x[1] <= -1) {
+
+        } else System.out.println(" Wrong coords");
+        }
 
     public static void main(String[] args) {
         new Perceptron().test();
